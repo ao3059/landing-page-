@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialConnect London - Find Your Tribe, Skip the Boring Events</title>
+    <meta name="description" content="Tired of boring meetups in London? Get matched with like-minded people and discover events you'll actually love. Join the waitlist.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SocialConnect London - Find Your Tribe">
+    <meta property="og:description" content="Stop wasting time at boring events. Get matched with like-minded people in London.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Analytics (Google Analytics 4) -->
+    <!-- Replace GA_MEASUREMENT_ID with your actual ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Stop Going to
+                    <span class="highlight">Boring Events</span>
+                    in London
+                </h1>
+                <p class="hero-subtitle">
+                    Get matched with like-minded people and discover events where you'll actually fit in.
+                    No more awkward small talk with people who don't share your vibe.
+                </p>
+
+                <!-- Email Signup Form -->
+                <form class="signup-form" id="waitlistForm">
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            required
+                            class="email-input"
+                        >
+                        <button type="submit" class="cta-button">
+                            Join the Waitlist
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">
+                        🎉 Join <span id="waitlistCount">247</span> Londoners already on the waitlist
+                    </p>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-content">
+                        <div class="success-icon">✅</div>
+                        <h3>You're on the list!</h3>
+                        <p>We'll email you as soon as SocialConnect launches in London. Get ready to discover your tribe!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header">
+                                <h4>Events for You</h4>
+                                <span class="location">📍 London</span>
+                            </div>
+                            <div class="event-card">
+                                <div class="event-info">
+                                    <h5>Creative Photography Walk</h5>
+                                    <p>📸 Shoreditch • Saturday 2PM</p>
+                                    <div class="attendees">
+                                        <div class="avatar-group">
+                                            <div class="avatar">A</div>
+                                            <div class="avatar">S</div>
+                                            <div class="avatar">M</div>
+                                        </div>
+                                        <span>+12 creative people going</span>
+                                    </div>
+                                </div>
+                                <div class="match-score">95% match</div>
+                            </div>
+                            <div class="event-card">
+                                <div class="event-info">
+                                    <h5>Tech Startup Networking</h5>
+                                    <p>💼 Canary Wharf • Tonight 6PM</p>
+                                    <div class="attendees">
+                                        <div class="avatar-group">
+                                            <div class="avatar">J</div>
+                                            <div class="avatar">K</div>
+                                            <div class="avatar">L</div>
+                                        </div>
+                                        <span>+8 entrepreneurs going</span>
+                                    </div>
+                                </div>
+                                <div class="match-score">87% match</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Tired of London's Event Scene?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">😴</div>
+                    <h3>Boring, Generic Meetups</h3>
+                    <p>Same old networking events with forced small talk and business card exchanges</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔍</div>
+                    <h3>Endless Scrolling</h3>
+                    <p>Wasting hours browsing Meetup and Eventbrite for something that actually sounds interesting</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">👤</div>
+                    <h3>Showing Up Alone</h3>
+                    <p>Arriving at events not knowing anyone and struggling to break into established groups</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Wrong Crowd</h3>
+                    <p>Events that sound good but turn out to be full of people nothing like you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">What if You Could...</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🎯</div>
+                    <h3>Get Perfectly Matched Events</h3>
+                    <p>Our algorithm learns your interests and personality to show you events you'll actually love</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">👥</div>
+                    <h3>Know Who's Going</h3>
+                    <p>See compatible attendees before you commit. Message potential friends ahead of time</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">💬</div>
+                    <h3>Connect Before You Meet</h3>
+                    <p>Start conversations with like-minded people so you arrive knowing you'll click</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">⭐</div>
+                    <h3>Quality Over Quantity</h3>
+                    <p>Curated events with engaged hosts and attendees who actually want to connect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How SocialConnect Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Tell Us About You</h3>
+                        <p>Share your interests, personality, and what you're looking for in London's social scene</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Get Matched</h3>
+                        <p>Our smart algorithm finds events and people that align with your vibe and interests</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Connect & Attend</h3>
+                        <p>Message compatible attendees, make plans, and show up knowing you'll have great conversations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="section-title">Londoners Are Ready for Something Better</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I'm so tired of generic networking events in London. The same corporate small talk every time. I want to meet people I'd actually grab drinks with after."</p>
+                        <div class="testimonial-author">
+                            <div class="avatar">S</div>
+                            <div class="author-info">
+                                <span class="name">Sarah, 28</span>
+                                <span class="location">Clapham</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I spend ages scrolling through Meetup looking for something interesting. Half the time I show up and it's nothing like what was advertised."</p>
+                        <div class="testimonial-author">
+                            <div class="avatar">M</div>
+                            <div class="author-info">
+                                <span class="name">Marcus, 32</span>
+                                <span class="location">Shoreditch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Moving to London was exciting but making genuine friends as an adult is harder than I thought. I need something that actually works."</p>
+                        <div class="testimonial-author">
+                            <div class="avatar">E</div>
+                            <div class="author-info">
+                                <span class="name">Emma, 26</span>
+                                <span class="location">Canary Wharf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Be First to Connect in London</h2>
+                <p>Join the waitlist and be among the first to experience a better way to discover events and meet like-minded people in London.</p>
+
+                <form class="signup-form" id="finalWaitlistForm">
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                            class="email-input"
+                        >
+                        <button type="submit" class="cta-button">
+                            Join <span id="finalWaitlistCount">247</span> Others
+                        </button>
+                    </div>
+                </form>
+
+                <p class="cta-note">
+                    We'll email you the moment SocialConnect launches in London. No spam, just the good stuff.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SocialConnect</h3>
+                    <p>Connecting like-minded people in London through better events and smarter matching.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SocialConnect. Made with ❤️ for London.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
